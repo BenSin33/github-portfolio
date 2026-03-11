@@ -1,0 +1,202 @@
+%-------------------------
+% Resume in Latex
+% Author : Matty
+% Based on: https://github.com/jakegut/resume (which was itself based on https://github.com/sb2nov/resume)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+\input{glyphtounicode}
+
+% -------------------- FONT OPTIONS --------------------
+% sans-serif
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% serif
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1in} % Default was -.5in
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{4.08003pt}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING --------------------
+\begin{flushright}
+  \color{gray}
+  \item
+  Last Updated on March 11th, 2026
+\end{flushright}
+
+\vspace{-5pt}
+
+\begin{center}
+    \textbf{\Huge \scshape Duong Thien Quy} \\ \vspace{8pt}
+    \small
+    \faIcon{map-marker-alt} Viet Nam \quad
+    \faIcon{github}
+    \href{https://github.com/BenSin33}{\underline{github.com/BenSin33}} $  $
+    \faIcon{linkedin}
+    \href{https://www.linkedin.com/in/duong-thien-quy-8809a33a5/}{\underline{linkedin.com/in/duong-thien-quy}} $  $
+    \faIcon{facebook}
+    \href{https://www.facebook.com/quy.thien.604797}{\underline{facebook.com/quy.thien.604797}} $  $
+    \faIcon{envelope}
+    \href{mailto:daylacaitaikhoan13@gmail.com}{\underline{daylacaitaikhoan13@gmail.com}}
+\end{center}
+
+% -------------------- ABOUT --------------------
+\section{About}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      Passionate backend developer from Viet Nam with a focus on building efficient, clean, and maintainable server-side applications. Currently expanding skills in \textbf{Python} and \textbf{C\#}, and actively working on \textbf{HRM\_APP} — a Human Resource Management application.
+    }}
+ \end{itemize}
+
+% -------------------- SKILLS --------------------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+
+     \textbf{Backend}{: Java, C\#, Python, Node.js, .NET} \\
+
+     \textbf{Frontend}{: React, Next.js, JavaScript, HTML5, CSS3} \\
+
+     \textbf{Database \& Tools}{: MySQL, Android, Unity, Figma, Cypress, Git/GitHub}
+
+    }}
+ \end{itemize}
+
+% -------------------- PROJECTS --------------------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+        \resumeProjectHeading
+        {\textbf{HRM App} $|$ \footnotesize\emph{Java, Android, MySQL} $|$
+        \href{https://github.com/BenSin33/HRM_APP}{\underline{github.com/BenSin33/HRM\_APP}}}{2024 -- Present}
+        \resumeItemListStart
+            \resumeItem{A comprehensive Human Resource Management application for Android devices}
+            \resumeItem{Features employee management, attendance tracking, and payroll processing}
+            \resumeItem{Built with Java and Android SDK; uses MySQL for persistent data storage}
+        \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{Web Application} $|$ \footnotesize\emph{React, Node.js, MySQL}}{2024}
+        \resumeItemListStart
+            \resumeItem{Full-stack web application with responsive design and RESTful API integration}
+            \resumeItem{Frontend built with React; backend powered by Node.js with MySQL database}
+        \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{Unity Game} $|$ \footnotesize\emph{Unity, C\#}}{2024}
+        \resumeItemListStart
+            \resumeItem{Interactive game developed with the Unity engine}
+            \resumeItem{Implemented gameplay mechanics and game logic using C\# scripting}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+% -------------------- EDUCATION --------------------
+\section{Education}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Saigon University (Đại học Sài Gòn)}{Ho Chi Minh City, Viet Nam}
+      {Bachelor's in Information Technology -- Year 3}{Current GPA: 2.55/4.0}
+
+  \resumeSubHeadingListEnd
+
+% -------------------- CONTACT --------------------
+\section{Contact}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Email}{: \href{mailto:daylacaitaikhoan13@gmail.com}{\underline{daylacaitaikhoan13@gmail.com}}} \\
+     \textbf{GitHub}{: \href{https://github.com/BenSin33}{\underline{github.com/BenSin33}}} \\
+     \textbf{LinkedIn}{: \href{https://www.linkedin.com/in/duong-thien-quy-8809a33a5/}{\underline{linkedin.com/in/duong-thien-quy-8809a33a5}}} \\
+     \textbf{Facebook}{: \href{https://www.facebook.com/quy.thien.604797}{\underline{facebook.com/quy.thien.604797}}}
+    }}
+ \end{itemize}
+
+\end{document}
