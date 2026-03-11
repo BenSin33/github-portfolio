@@ -58,6 +58,13 @@ img { max-width: 100%; display: block; }
 }
 .btn-outline:hover { background: #2563eb; color: #fff; }
 
+.btn-download {
+  background: transparent;
+  color: #16a34a;
+  border: 2px solid #16a34a;
+}
+.btn-download:hover { background: #16a34a; color: #fff; }
+
 .link { color: #2563eb; text-decoration: underline; }
 .link:hover { color: #1d4ed8; }
 
